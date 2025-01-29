@@ -1,21 +1,14 @@
 
 
-#include"Person.h"
+//#include"Person.h"
 #include "Inventory.h"
+#include "Animal.h"
+
 using std::cout; 
 
-/*this main function is often called the CLIENT PROGRAM*/
-int main()
+
+void demoInventoryClassCreation()
 {
-    //cout << UINT_MAX + 1<< "\n";
-    //std::cout << "Hello World!\n";
-
-    //Person me{ 36, "Seth" };
-
-    //me.print(); 
-    
-
-    //string name = 
     //Inventory mySpecialInventoryItem{ "some shoes", 3, 11.99 };
     Inventory firstInventoryItem{ "Women's Crosbie Wide Leg Jeans ", 5, 300.00 };
 
@@ -27,8 +20,21 @@ int main()
 
     //mySpecialInventoryItem.setAllInventoryAttributes("some OTHER shoes", 7, 22.99);
 
+    cout << std::fixed << setprecision(2);
     cout << "The total value of the first inventory item is: " << firstInventoryItem.calculateTotalValue()
         << "\n";
     //cout << "Hadfadsf\n";
+
+}
+
+/*this main function is often called the CLIENT PROGRAM*/
+int main()
+{
+    cout << "The amount of RAM needed by an integer is: " << sizeof(int) << " bytes\n";
+    cout << sizeof(Animal) << "\n";
+    Animal myDog{ 11, "Doris", "canis familiaris", 80.5 };
+
+    myDog.print(); 
+
 
 }

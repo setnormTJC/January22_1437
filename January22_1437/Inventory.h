@@ -8,6 +8,13 @@
 
 #include<string> 
 
+#include<iomanip> //input/output manipulation
+
+
+
+using std::cout, std::setprecision;
+
+
 using std::string; 
 
 class Inventory

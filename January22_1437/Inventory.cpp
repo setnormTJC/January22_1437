@@ -1,7 +1,4 @@
 #include "Inventory.h"
-#include<iomanip>
-
-using std::cout; 
 
 Inventory::Inventory(const string& name, const int unitsAvailable, const double cost)
 	:name(name), unitsAvailable(unitsAvailable), cost(cost)
