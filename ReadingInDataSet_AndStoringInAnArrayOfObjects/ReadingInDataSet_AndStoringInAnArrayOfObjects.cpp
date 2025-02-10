@@ -67,9 +67,9 @@ int main()
     //demo getline for text and ints (and other data types) 
 
 
-    ifstream fin{ "socialMediaRecords.csv" }; 
+    ifstream fin{ "socialMediaRecords.csv" }; //NOT case-sensitive on Windows!!!!
 
-    if (!fin)
+    if (!fin.is_open())
     {
         cout << "FNFE\n";
         return -1; //early return - waste no time looking through data if the file is not even there!
